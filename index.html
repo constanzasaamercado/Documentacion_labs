@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Portafolio de Laboratorios - Constanza Saa</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Registro de laboratorios de desarrollo y automatización">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  
+  <!-- Base de tema claro de Docsify -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+  
+  <style>
+    /* 🎨 PALETA DE COLORES PERSONALIZADA (Inspirada en tu Portafolio Web) */
+    :root {
+      --theme-color: #d17a8e;        /* Tu Rosa Pastel característico */
+      --text-color: #1a1a1a;         /* El gris oscuro profundo de tu portafolio */
+      --bg-accent: #fcf6f7;          /* Fondo rosa ultra suave para bloques e insignias */
+    }
+
+    /* Ajustes generales de tipografía y lectura */
+    body {
+      color: var(--text-color);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    /* Menú Lateral (Sidebar) */
+    .sidebar {
+      background-color: #ffffff;
+      border-right: 1px solid #eaeaea;
+    }
+    .sidebar-nav strong {
+      color: var(--text-color) !important;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 11px;
+      letter-spacing: 1px;
+    }
+    .sidebar ul li a {
+      color: #555555;
+      font-size: 14px;
+    }
+    /* El elemento activo del menú lleva tu color rosa */
+    .sidebar ul li.active > a {
+      color: var(--theme-color) !important;
+      font-weight: 600;
+      border-right: 2px solid var(--theme-color);
+    }
+
+    /* Títulos Principales */
+    h1, h2, h3, h4 {
+      color: var(--text-color);
+      font-weight: 600;
+    }
+
+    /* Estilo de enlaces dentro del contenido */
+    article a {
+      color: var(--theme-color);
+      text-decoration: none;
+      font-weight: 500;
+    }
+    article a:hover {
+      text-decoration: underline;
+    }
+
+    /* Estilo para bloques de código e inline-code */
+    code {
+      border-radius: 6px !important;
+    }
+    :not(pre) > code {
+      background-color: var(--bg-accent) !important;
+      color: #b5546d !important;
+      padding: 3px 6px !important;
+      font-size: 0.9em !important;
+    }
+
+    /* Bloques de advertencias / Notas destacadas */
+    blockquote {
+      border-left: 4px solid var(--theme-color) !important;
+      background-color: var(--bg-accent);
+      color: #555;
+      border-radius: 0 8px 8px 0;
+      padding: 15px !important;
+    }
+
+    /* Botones de paginación (Siguiente / Anterior) al final de la página */
+    .docsify-pagination-container {
+      border-top: 1px solid #eaeaea !important;
+      margin-top: 50px !important;
+    }
+    .pagination-item-title {
+      color: var(--theme-color) !important;
+    }
+  </style>
+</head>
+<body>
+  <div id="app">Cargando portafolio...</div>
+  <script>
+    window.$docsify = {
+      name: 'Constanza Saa',
+      repo: 'https://github.com/constanzasaamercado',
+      loadSidebar: true,
+      subMaxLevel: 3,
+      auto2top: true,
+      
+      // Plugin de paginación en español
+      pagination: {
+        previousText: 'Anterior',
+        nextText: 'Siguiente',
+        crossChapter: true,
+        crossChapterText: true,
+      },
+    }
+  </script>
+  <!-- Motores de Docsify -->
+  <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+  
+  <!-- Plugins complementarios -->
+  <script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-python.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
+</body>
+</html>
