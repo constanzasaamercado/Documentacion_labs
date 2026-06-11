@@ -3,9 +3,9 @@
 * [🏠 Inicio](README)
 
 * **📌 Entregas de Laboratorios**
-  * [Laboratorio 11: Introducción a Amazon EC2](11-Lab-Introduccion-a-Amazon-EC2)
-  * [Laboratorio 225: Introducción a Linux Amazon AMI](225-Lab-Introduccion-a-Linux-Amazon-AMI)
-  * [Laboratorio 227: Línea de comandos de Linux](227-Lab-Linea-de-comandos-de-Linux)
+  * [Laboratorio 11: Introducción a Amazon EC2](11-lab-introduccion-a-amazon-ec2)
+  * [Laboratorio 225: Introducción a Linux Amazon AMI](225-lab-introduccion-a-linux-amazon-ami)
+  * [Laboratorio 227: Línea de comandos de Linux](227-lab-linea-de-comandos-de-linux)
   * [Laboratorio 4: Conexión a Base de Datos](lab-4)
   * [Laboratorio 5: Desarrollo Backend](lab-5)
   * [Laboratorio 6: Vistas y Plantillas](lab-6)
