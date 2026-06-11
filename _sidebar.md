@@ -1,6 +1,6 @@
 <!-- docs/_sidebar.md -->
 
-* [🏠 Inicio](README.md)
+* [🏠 Inicio](README)
 
 * **📌 Entregas de Laboratorios**
   * [Laboratorio 11: Introducción a Amazon EC2](11-Lab-Introduccion-a-Amazon-EC2)
