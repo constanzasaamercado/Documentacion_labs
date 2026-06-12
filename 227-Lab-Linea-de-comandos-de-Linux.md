@@ -1,6 +1,6 @@
 # Laboratorio 227: Linea de comandos de Linux
 
-> **Descripción del Laboratorio:** > En este entorno de laboratorio, el acceso a los servicios de AWS y a sus acciones puede estar restringido a aquellos que necesitas para completar las instrucciones del laboratorio. Es posible que encuentres errores si intentas acceder a otros servicios o realizar acciones más allá de las descritas en este laboratorio.
+> **Descripción del Laboratorio:** > En este entorno de laboratorio, .
 
 ---
 
@@ -67,13 +67,13 @@ Figura 5.
 Figura 6.
 
 ### Finalización del laboratorio: 
-1. Con el laboratorio terminado se porcede a finalizar correctamente.
+1. Con el laboratorio terminado se procede a finalizar correctamente.
 
 ![Finalización del laboratorio](227-Lab-Linea-de-comandos-de-Linux\7.png)
 Figura 7.
 
 ## 💡 Conclusión y Comentarios Personales
 
-La realización de este laboratorio permitió adquirir competencias esenciales en la administración de sistemas Linux a través de la línea de comandos de Bash. El uso de comandos de diagnóstico como `whoami`, `hostname -s`, `uptime -p`, `who -H -a` e `id ec2-user` demostró ser fundamental para la auditoría y el reconocimiento inicial de cualquier servidor. Estas herramientas proporcionan información crítica sobre la identidad del usuario activo, los privilegios de grupo, los tiempos de actividad de la máquina y los detalles de las sesiones concurrentes, elementos indispensables para resolver problemas en entornos de producción[cite: 4].
+La realización de este laboratorio permitió adquirir competencias esenciales en la administración de sistemas Linux a través de la línea de comandos de Bash. El uso de comandos de diagnóstico como **whoami**, **hostname -s**, **uptime -p** **who -H -a** e **id ec2-user** demostró ser fundamental para la auditoría y el reconocimiento inicial de cualquier servidor. Estas herramientas proporcionan información crítica sobre la identidad del usuario activo, los privilegios de grupo, los tiempos de actividad de la máquina y los detalles de las sesiones concurrentes, elementos indispensables para resolver problemas en entornos de producción.
 
-Por otro lado, la práctica validó que dominar el historial de la terminal es clave para optimizar el flujo de trabajo diario. Herramientas de automatización nativas como el comando `history`, la búsqueda inversa con `CTRL+R` y el atajo de repetición inmediata `!!` comprueban que un administrador de sistemas puede reutilizar y editar instrucciones complejas previas de manera ágil[cite: 4]. Esta capacidad disminuye los tiempos de ejecución y reduce drásticamente los errores de digitación en la consola, logrando una gestión de TI mucho más eficiente y profesional.
+Por otro lado, la práctica validó que dominar el historial de la terminal es clave para optimizar el flujo de trabajo diario. Herramientas de automatización nativas como el comando **history**, la búsqueda inversa con **CTRL+R** y el atajo de repetición inmediata **!!** comprueban que un administrador de sistemas puede reutilizar y editar instrucciones complejas previas de manera ágil. Esta capacidad disminuye los tiempos de ejecución y reduce drásticamente los errores de digitación en la consola, logrando una gestión de TI mucho más eficiente y profesional.

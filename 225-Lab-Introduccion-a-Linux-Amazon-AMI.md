@@ -56,9 +56,9 @@ Figura 6.
 
 ### Manual del programa **man**: 
 1. En la terminal se digita el comando **man** que procede a abrir el manual de uso del programa.
-2. Este indica por ejemplo como moverse dentro del programa con las flechas del teclado, entre otros detalles, se prueba dentro de este mismo manual esas indicaciones.
+2. Descripción del manual.
 
-Los siguientes son algunos de los encabezados más importantes de las páginas de manual (esta lista no lo incluye todo):
+Los siguientes son algunos de los encabezados más importantes de las páginas del manual:
 * NAME (Nombre)
 * SYNOPSIS (Sinopsis / Sintaxis)
 * DESCRIPTION (Descripción)
@@ -83,7 +83,7 @@ Figura 8.
 Figura 9.
 
 ### Finalización del laboratorio: 
-1. Con el laboratorio terminado se porcede a finalizar correctamente.
+1. Con el laboratorio terminado se procede a finalizar correctamente.
 
 ![Finalización del laboratorio](225-Lab-Introduccion-a-Linux-Amazon-AMI\10.png)
 Figura 10.

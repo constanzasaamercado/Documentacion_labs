@@ -181,7 +181,7 @@ Figura 22.
 Figura 23.
 
 ### Finalización del laboratorio:
-1. Con el laboratorio terminado se porcede a finalizar.
+1. Con el laboratorio terminado se procede a finalizar.
 
 ![Finalización del laboratorio](11-Introduccion-a-Amazon-EC2\25.png)
 Figura 24.
