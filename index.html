@@ -14,7 +14,7 @@
     /* 🎨 PALETA DE COLORES PERSONALIZADA (Inspirada en tu Portafolio Web) */
     :root {
       --theme-color: #d17a8e;        /* Tu Rosa Pastel característico */
-      --text-color: #1a1a1a;         /* El gris oscuro profundo de tu portafolio */
+      --text-color: #e40486;         /* El gris oscuro profundo de tu portafolio */
       --bg-accent: #fcf6f7;          /* Fondo rosa ultra suave para bloques e insignias */
     }
 
@@ -83,13 +83,26 @@
       padding: 15px !important;
     }
 
-    /* Botones de paginación (Siguiente / Anterior) al final de la página */
+   /* Botones de paginación (Siguiente / Anterior) al final de la página */
     .docsify-pagination-container {
       border-top: 1px solid #eaeaea !important;
-      margin-top: 50px !important;
+      margin-top: 60px !important;
+      position: relative;
+      padding-left: 290px !important; /* 1. Más espacio a la derecha para que quepa el pollito gigante */
+      min-height: 280px;               /* 2. Obliga a la sección a estirarse hacia abajo para que el pollito no se corte */
     }
-    .pagination-item-title {
-      color: var(--theme-color) !important;
+
+    /* 🐥 Tu pollito indicador automático (¡Versión Súper Gigante!) */
+    .docsify-pagination-container::before {
+      content: "";
+      position: absolute;
+      left: 10px;
+      top: 15px;     /* 3. Lo posicionamos fijo abajo de la línea gris para que no se pegue arriba */
+      width: 260px;  /* 4. El doble de tamaño (Ancho) */
+      height: 260px; /* 5. El doble de tamaño (Alto) */
+      background-image: url('piyoko.svg');
+      background-size: contain;
+      background-repeat: no-repeat;
     }
   </style>
 </head>
@@ -102,7 +115,7 @@
       loadSidebar: true,
       subMaxLevel: 3,
       auto2top: true,
-      
+
       // Plugin de paginación en español
       pagination: {
         previousText: 'Anterior',
