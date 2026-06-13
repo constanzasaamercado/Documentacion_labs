@@ -1,15 +1,14 @@
-# Laboratorio 233: Trabajo con el sistema de archivos
+# Laboratorio 235: Trabajo con archivos
 
-> **Descripción del Laboratorio:** > Este laboratorio práctico enseña a administrar archivos y directorios en un servidor Linux (Amazon EC2) a través de la línea de comandos.
+> **Descripción del Laboratorio:** > Este laboratorio práctico se enfoca en la automatización de respaldos, la generación de registros (logs) y la transferencia de datos en un entorno Linux (Amazon EC2) mediante la línea de comandos.
 
 ---
 
 ## 🎯 Objetivos
 
-* Crear una estructura de carpetas provista por este laboratorio.
-* Crear archivos.
-* Copiar y mover archivos y directorios.
-* Eliminar archivos y directorios.
+* Crear un archivo de respaldo (backup) de una estructura completa de carpetas utilizando **tar**.
+* Registrar la creación del respaldo en un archivo que incluya la fecha, la hora y el nombre del archivo de respaldo.
+* Transferir el archivo de respaldo a otra carpeta.
 
 ---
 
@@ -18,75 +17,51 @@
 ### Inicio laboratorio: 
 1. Se da por iniciado el laboratorio al iniciar el conteo.
 
-![Laboratorio Iniciado](233-Lab-Trabajo-con-el-sistema-de-archivos\1.png)
+![Laboratorio Iniciado](235-Lab-Trabajo-con-archivos\1.png)
 Figura 1.
 
 ### Credenciales: 
 1. Se descargar el archivo **PPK**.
 2. Se copia el **IPPublico**.
 
-![Credenciales](233-Lab-Trabajo-con-el-sistema-de-archivos\2.png)
+![Credenciales](235-Lab-Trabajo-con-archivos\2.png)
 Figura 2.
 
 ### Terminal Bash inicio: 
-1. Se inicia correctamente la sesion en la terminal bash de **PuTTY** con el sistema Linux. **pwd** Valida que se encuentre en la carpeta de inicio (home) del usuario actual escribiendo.
+1. Se inicia correctamente la sesion en la terminal bash de **PuTTY** con el sistema Linux. **pwd** Valida que se encuentre en la carpeta de inicio (home) del usuario actual escribiendo. Para validar que la carpeta "CompanyA" existe, se introduce el comando en la terminal **ls -R CompanyA**.
 
-![Terminal Bash inicio](233-Lab-Trabajo-con-el-sistema-de-archivos\3.png)
+![Terminal Bash inicio](235-Lab-Trabajo-con-archivos\3.png)
 Figura 3.
 
-### Crear una estructura de carpetas 1: 
-1. **mkdir CompanyA** Este comando se utiliza para crear carpetas. Luego se debe usar el comando **cd CompanyA** para posicionarse en la carpeta "CompanyA".
+### Crear y Registrar un respaldo: 
+1. **tar -csvpzf backup.CompanyA.tar.gz CompanyA** Este comando se utiliza para crear respaldos de la estructura de carpetas, en el resultado muestra que se realizo. 
+2. **cd /home/ec2-user/CompanyA** para navegar hacia la carpeta *CompanyA*, se introduce el comando en la terminal. Luego para crear un archivo de registro vacío llamado *backups.csv*, se digita el comando **touch SharedFolders/backups.csv**. **echo "25 Aug 25 2021, 16:59, backup.CompanyA.tar.gz" | sudo tee SharedFolders/backups.csv** con este comando se añade la fecha, la hora y el nombre del archivo al archivo.
+3. Con el fin de mostrar el contenido del archivo y verificar que se guardó, se utiliza el comando **cat SharedFolders/backups.csv**
 
-![Crear una estructura de carpetas 1](233-Lab-Trabajo-con-el-sistema-de-archivos\4.png)
+![Crear y Registrar un respaldo](235-Lab-Trabajo-con-archivos\4.png)
 Figura 4.
 
-### Crear una estructura de carpetas 2: 
-1. **mkdir Finance HR Management** Se crean las sub carpetas dentro de **CompanyA**, se usa el comando **ls** para verificar la creación y resulta correcto.
-2. Con el comando **cd HR** se posiciona dentro del directorio **HR**, luego con el comando **touch Assessments.csv TrialPeriod.csv** para crear los archivos vacíos dentro de la carpeta HR. Con **ls** para verificar la creación y resulta correcto.
-3. Despues de probar varias formas de cambiar de directorio, el comando que resulto fue **cd /home/ec2-user/CompanyA/Finance**, se debia especificar bien la dirección, ya que se encontraba posicionado en una carpeta dentro de **HR**.
-4. **touch Salary.csv ProfitAndLossStatements.csv** Con este comando se crean los archivos dentro de la carpeta de Finance y con **ls** se valida.
-5. Con **cd** se vuelve a al directorio de origen **/home/ec2-user**, con **cd CompanyA** se ingresa a ese directorio, desde de aqui se digita el comando **touch Management/Managers.csv Management/Schedule.csv** para crear los nuevos archivos vacíos en la carpeta Management desde afuera. Al ingresar **ls Management** se valida la correcta creación de los archivos.
+### Mover el archivo de respaldo: 
+1. Para validar que se encuentra dentro de la carpeta *CompanyA* en la terminal, se introduce **pwd**. Para transferir el archivo de respaldo al directorio del equipo de IA, introduce **mv ../backup.CompanyA.tar.gz IA/** a la terminal, como resultado indica que no se encuentra el respaldo, por lo que ingrese el comando **sudo find / -name "'CompanyA'"** aun seguia sin mostrarse, procedi a cambiar la busqueda a **sudo find / -name "'.tar.gz'"**, por este medio lo encontro, conclui que al digitar el nombre del backup tuve un error al no ingresar el nombre que correspondia al respaldo, asi que, no se pudo mover. Trate de volver a abrir la sesión en la terminal pero aprendí que en el mismo laboratorio las acciones se respaldan. Por lo que decidí seguir con el nombre que le coloque, para continuar con las instrucciones del laboratorio.
+**mv /home/ec2-user/backup.tar.gz IA/** usando el comando de esa manera se movio tal como indicaba la instrucción, confirmado con el comando **ls . IA**.
 
-![Crear una estructura de carpetas 2](233-Lab-Trabajo-con-el-sistema-de-archivos\5.png)
+![Mover el archivo de respaldo](235-Lab-Trabajo-con-archivos\5.png)
 Figura 5.
-
-### Validación de creación de carpetas: 
-1. **ls -laR** Con este comando se valida que todos las carpetas y archivos han sido creados correctamente.
-
-
-![Validación de creación de carpetas](233-Lab-Trabajo-con-el-sistema-de-archivos\6.png)
-Figura 6.
-
-### Eliminar y reorganizar carpetas: 
-1.  Primero hay que asegurarse de estar en el directorio correcto con **pwd**, estando en **CompanyA** se procede a digitar el comando **cp -r Finance HR** para copiar la carpeta Finance y todo su contenido.
-2. **ls HR/Finance** para verificar que la carpeta y el contenido se hayan copiado correctamente, lo cual se confirma en la imagen.
-3. **rmdir Finance** para eliminar la carpeta Finance de la estructura original de **CompanyA**, pero como funciona únicamente en directorios vacíos, se debe eliminar los archivos dentro de la carpeta primeor y luego eliminar la carpeta Finance. Con **rm Finance/ProfitAndLossStatements.csv Finance/Salary.csv** se eliminan los archivos dentro de la carpeta pero la primera vez por error de digitación no funciono se repite el proceso. Se verifica que la carpeta esta vacia con **ls Finance**, por lo que se procede a volver a repetir el comando **rmdir Finance** para esta vez eliminar con exito la carpeta comprobado con el comando **ls**.
-
-
-![Eliminar y reorganizar carpetas](233-Lab-Trabajo-con-el-sistema-de-archivos\7.png)
-Figura 7.
-
-### Mover carpetas: 
-1. Para mover la carpeta Management dentro de la carpeta HR, se introduce **mv Management HR** y se verifica que se realizo correctamente con el comando **ls . HR/Management**.
-
-![Mover carpetas](233-Lab-Trabajo-con-el-sistema-de-archivos\8.png)
-Figura 8.
-
-### Mover archivos: 
-1. Para crear la carpeta Employees, introduce **mkdir Employees**. Se procede a a verificar la creación de la carpeta con **ls**.
-2. Para mover los archivos a esta nueva carpeta, se debe digitar **mv Assessments.csv TrialPeriod.csv Employees**, pero me da error por una equivocación al digitar "Employees", ingrese erroneamente "Employess", por lo que no permitio mover los archivos. Luego de que buscara con el comando **ls . Employees** me percate del error y debi eliminar la carpeta con **rmdir Employess**, para a continuación crear de forma correcta la carpeta con **mkdir Employees**. Se procedio a volver a colocar el comando **mv Assessments.csv TrialPeriod.csv Employees**, corroborando con **ls . Employees** que se movieron los archivos a la carpeta "Employees" correctamente.
-
-![Mover archivos](233-Lab-Trabajo-con-el-sistema-de-archivos\9.png)
-Figura 9.
 
 ### Submit: 
 1. Cargado a **submit** el laboratorio y entregado.
 
-![Submit](233-Lab-Trabajo-con-el-sistema-de-archivos\10.png)
-Figura 10.
+![Submit](235-Lab-Trabajo-con-archivos\6.png)
+Figura 6.
 
 ### Finalización del laboratorio: 
 1. Con el laboratorio terminado se procede a finalizar correctamente.
 
-![Finalización del laboratorio](233-Lab-Trabajo-con-el-sistema-de-archivos\11.png)
-Figura 11.
+![Finalización del laboratorio](235-Lab-Trabajo-con-archivos\7.png)
+Figura 7.
+
+## 💡 Conclusión y Comentarios Personales
+
+La ejecución de este laboratorio permitió adquirir competencias clave en materia de seguridad, integridad de datos y continuidad operativa dentro de un entorno Linux. La utilización de la herramienta **tar** con los parámetros **-csvpzf** demostró ser un método altamente eficiente para empaquetar y comprimir estructuras completas de datos organizacionales (como *CompanyA*), reduciendo el uso de espacio en disco y facilitando su distribución. Asimismo, el uso combinado de **touch**, **echo** y **tee** sirvió para comprender la importancia de mantener una bitácora de auditoría centralizada (*backups.csv*), registrando de forma estricta la fecha, hora y nombre de cada respaldo para garantizar la trazabilidad de la información.
+
+Un hito fundamental de la práctica fue la resolución de problemas en la línea de comandos durante la transferencia del archivo. Al enfrentarse a un error de localización debido a una discrepancia en el nombre original del respaldo, el laboratorio se convirtió en un excelente caso de estudio de diagnóstico de fallas: el uso de búsquedas indexadas con privilegios elevados (**sudo find / -name ".tar.gz"**) permitió rastrear con éxito la ubicación exacta del elemento. Comprender que en los entornos de laboratorios las acciones previas se mantienen persistentes facilitó adaptar la estrategia y concretar la reubicación del archivo hacia el directorio de destino (*IA/*) mediante el comando **mv**. En conclusión, la experiencia validó que la atención al detalle y el dominio de herramientas de búsqueda son aptitudes indispensables para mantener la resiliencia en la gestión de infraestructuras tecnológicas.

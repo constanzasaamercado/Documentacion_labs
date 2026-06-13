@@ -1,6 +1,6 @@
 # Laboratorio 227: Linea de comandos de Linux
 
-> **Descripción del Laboratorio:** > En este entorno de laboratorio, .
+> **Descripción del Laboratorio:** > En este entorno de laboratorio, se enfocara en el reconocimiento de sistemas Linux mediante la línea de comandos de Bash. Durante el laboratorio se ejecutaran utilidades esenciales de auditoría para extraer metadatos del entorno y se implementaran técnicas avanzadas de navegación por el historial de la terminal para optimizar la velocidad y el flujo de trabajo operativo.
 
 ---
 

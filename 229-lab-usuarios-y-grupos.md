@@ -1,6 +1,6 @@
 # Laboratorio 229: Usuarios y grupos
 
-> **Descripción del Laboratorio:** > En esta práctica de laboratorio, .
+> **Descripción del Laboratorio:** > Esta práctica de laboratorio, consiste en la administración y control de cuentas de usuario y grupos en un servidor Linux (Amazon EC2). El ejercicio abarca desde el alta individual de usuarios y contraseñas de seguridad, la creación de grupos correspondientes a departamentos organizacionales y el análisis técnico de las restricciones de permisos y políticas de *sudoers* mediante la revisión de bitácoras de seguridad del sistema.
 
 ---
 

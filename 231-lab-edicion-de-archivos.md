@@ -1,6 +1,6 @@
 # Laboratorio 231: Edición de archivos
 
-> **Descripción del Laboratorio:** > En este entorno de laboratorio, .
+> **Descripción del Laboratorio:** > Esta práctica de laboratorio se enfoca en el uso y configuración de los editores de texto nativos de Linux, Vim y Nano, en un servidor Amazon EC2. El ejercicio comprende el aprendizaje de la navegación y comandos modales mediante **vimtutor**, la creación de archivos de texto (*helloworld* y *cloudworld*) y la correcta gestión de atajos de teclado para insertar datos, guardar cambios y cerrar sesiones de edición de forma segura en la consola de comandos.
 
 ---
 
