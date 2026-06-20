@@ -17,3 +17,5 @@
     * [Laboratorio 241: Administración de servicios](241-lab-administracion-de-servicios)
     * [Laboratorio 243: Administración del software](243-lab-administracion-del-software)
     * [Laboratorio 245: Administración de archivos de registro](245-lab-administracion-de-archivos-de-registro)
+    * [Laboratorio 247: Trabajo con comandos](247-lab-trabajo-con-comandos)
+    * [Laboratorio 249: El Bash Shell](249-lab-el-bash-shell)
