@@ -22,3 +22,6 @@
     * [Laboratorio 251: Scripts del Shell Bash](251-lab-scripts-del-shell-bash)
     * [Laboratorio 253: Desafío Scripting del Shell Bash](253-lab-desafio-scripting-del-shell-bash)
     * [Laboratorio 261: Direcciones IP públicas y privadas](261-lab-direcciones-ip-publicas-y-privadas)
+    * [Laboratorio 262: Direcciones IP Estáticas y Dinámicas](262-lab-direcciones-ip-y-estaticas-y-dinamicas)
+    * [Laboratorio 263: Crear subredes en una VPC](263-lab-crear-subredes-en-una-vpc)
+    * [Laboratorio 264: Recursos de red para una VPC](264-lab-recursos-de-red-para-una-vpc)
