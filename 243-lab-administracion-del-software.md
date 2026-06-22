@@ -22,7 +22,7 @@
 Figura 1.
 
 ### Credenciales: 
-1. Se descargar el archivo **PPK**.
+1. Se descarga el archivo **PPK**.
 2. Se copia el **IPPublico**.
 
 ![Credenciales](243-Lab-Administración-del-software\2.png)

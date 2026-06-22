@@ -19,3 +19,6 @@
     * [Laboratorio 245: Administración de archivos de registro](245-lab-administracion-de-archivos-de-registro)
     * [Laboratorio 247: Trabajo con comandos](247-lab-trabajo-con-comandos)
     * [Laboratorio 249: El Bash Shell](249-lab-el-bash-shell)
+    * [Laboratorio 251: Scripts del Shell Bash](251-lab-scripts-del-shell-bash)
+    * [Laboratorio 253: Desafío Scripting del Shell Bash](253-lab-desafio-scripting-del-shell-bash)
+    * [Laboratorio 261: Direcciones IP públicas y privadas](261-lab-direcciones-ip-publicas-y-privadas)

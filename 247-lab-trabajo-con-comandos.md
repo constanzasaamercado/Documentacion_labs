@@ -24,7 +24,7 @@
 Figura 1.
 
 ### Credenciales: 
-1. Se descargar el archivo **PPK**.
+1. Se descarga el archivo **PPK**.
 2. Se copia el **IPPublico**.
 
 ![Credenciales](247-Lab-Trabajo-con-comandos\2.png)

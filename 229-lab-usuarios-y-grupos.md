@@ -21,7 +21,7 @@
 Figura 1.
 
 ### Credenciales: 
-1. Se descargar el archivo **PPK**.
+1. Se descarga el archivo **PPK**.
 2. Se copia el **IPPublico**.
 
 ![Credenciales](229-Lab-Usuarios-y-grupos\2.png)
