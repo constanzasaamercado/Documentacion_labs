@@ -18,6 +18,8 @@ Cuando creo un servidor Apache a través de la línea de comandos, no puedo hace
 ¡Gracias!
 AnaContractor
 
+---
+
 ## 🛠️ Desarrollo Paso a Paso
 
 ### Inicio laboratorio: 

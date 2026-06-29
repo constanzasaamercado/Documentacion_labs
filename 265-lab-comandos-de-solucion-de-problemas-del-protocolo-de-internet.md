@@ -13,6 +13,8 @@
 
 Nuevo administrador de redes que se encuentra resolviendo problemas de los clientes.
 
+---
+
 ## 🛠️ Desarrollo Paso a Paso
 
 ### Inicio laboratorio: 

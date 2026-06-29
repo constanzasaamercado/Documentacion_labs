@@ -21,6 +21,8 @@ Figura: El cliente solicita la construcción de esta arquitectura para lanzar su
 ![Arquitectura cliente](267-Lab-Creacion-de-una-VPC-y-lanzamiento-de-un-servidor-web\Arquitectura-cliente.png)
 Figura 0.
 
+---
+
 ## 🛠️ Desarrollo Paso a Paso
 
 ### Inicio laboratorio: 
@@ -77,7 +79,7 @@ Figura 6.
 
 ![Asociar las nuevas subredes a sus Tablas de Enrutamiento 1](267-Lab-Creacion-de-una-VPC-y-lanzamiento-de-un-servidor-web\7.png)
 Figura 7.
-![Asociar las nuevas subredes a sus Tablas de Enrutamiento 2](267-Lab-Creacion-de-una-VPC-y-lanzamiento-de-un-servidor-web\8.png)
+![Asociar las nuevas subredes a sus Tablas de Enrutamiento 1.1](267-Lab-Creacion-de-una-VPC-y-lanzamiento-de-un-servidor-web\8.png)
 Figura 8.
 
 ### Crear el Grupo de Seguridad: 
@@ -89,7 +91,7 @@ Figura 9.
 ### Lanzar el Servidor Web EC2: 
 1.  Se configura la instancia de EC2 de la siguiente forma; Name: Web Server 1, Amazon Machine Image (AMI): Amazon Linux,menú: Amazon Linux 2 AMI (HVM), Instance type: t3.micro, Key pair (login): vockey, Network settings; VPC: Lab VPC, Subnet: Public Subnet 2, Auto-assign public IP: Enable, Firewall (security groups): Select existing security group,
 security groups: Web Security Group.
-1.  En Advanced details, User data se ingresa el script entregado en laboratorio.
+2.  En Advanced details, User data se ingresa el script entregado en laboratorio.
 
 ![Lanzar el Servidor Web EC2](267-Lab-Creacion-de-una-VPC-y-lanzamiento-de-un-servidor-web\10.png)
 Figura 10.

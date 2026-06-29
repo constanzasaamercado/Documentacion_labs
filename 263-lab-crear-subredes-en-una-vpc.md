@@ -26,6 +26,8 @@ Soy nuevo en AWS y necesito ayuda para configurar una VPC. ¿Podrían ayudarme c
 
 Paulo Santos > Dueño de Startup
 
+---
+
 ## 🛠️ Desarrollo Paso a Paso
 
 ### Inicio laboratorio: 

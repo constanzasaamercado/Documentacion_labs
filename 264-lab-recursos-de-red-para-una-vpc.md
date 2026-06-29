@@ -25,6 +25,7 @@ Su rol es el de un Ingeniero de Soporte de Cloud (Cloud Support Engineer) en Ama
 Previamente me comuniqué con ustedes para solicitar ayuda en la configuración de mi VPC. Pensé que sabía cómo conectar todos los recursos para establecer una conexión a Internet, pero ni siquiera puedo hacer ping fuera de la VPC. ¡Todo lo que necesito hacer es un ping! ¿Podrían por favor ayudarme a configurar mi VPC para que tenga conectividad de red y pueda hacer ping? La arquitectura se encuentra abajo. ¡Gracias!
 — Brock, dueño de la startup.
 
+---
 
 ## 🛠️ Desarrollo Paso a Paso
 

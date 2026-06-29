@@ -21,6 +21,8 @@ Hola Soporte en la Nube!
 Estamos teniendo problemas con una de nuestras instancias EC2. La IP cambia cada vez que iniciamos y detenemos esta instancia llamada Public Instance. Esto hace que todo se rompa ya que necesita una dirección IP estática. No estamos seguros de por qué la IP cambia a una IP aleatoria cada vez en esta instancia. ¿Podrían investigar, por favor? Adjunto está nuestra arquitectura. Por favor, háganme saber si tienen alguna pregunta.
 ¡Gracias! — Bob, Administrador de la Nube
 
+---
+
 ## 🛠️ Desarrollo Paso a Paso
 
 ### Inicio laboratorio: 

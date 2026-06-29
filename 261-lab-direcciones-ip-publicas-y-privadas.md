@@ -25,6 +25,8 @@ También tenía una pregunta sobre el uso de un rango público de direcciones IP
 
 Jess - Administradora de la Nube
 
+---
+
 ## 🛠️ Desarrollo Paso a Paso
 
 ### Inicio laboratorio: 
