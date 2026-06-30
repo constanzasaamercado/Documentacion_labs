@@ -30,3 +30,4 @@
     * [Laboratorio 266: Solución de problemas de una red](266-lab-solucion-de-problemas-de-una-red)
     * [Laboratorio 267: Creación de una VPC y lanzamiento de un servidor web](267-lab-Creacion-de-una-vpc-y-lanzamiento-de-un-servidor-web)
     * [Laboratorio 276: Endurecimiento de la red](276-lab-endurecimiento-de-la-red)
+    * [Laboratorio 277: Endurecimiento de sistemas](277-lab-endurecimiento-de-sistemas)
